@@ -64,7 +64,7 @@ $$a^2 + b^2 = c^2$$
 How do you write such expression? Very simple: using **double dollar** signs
 
 {% highlight r %}
-$$a^2 + b^2 = c^2$$
+$a^2 + b^2 = c^2$
 {% endhighlight %}
 
 To display inline math use ```\\( ... \\)``` like this ```\\( sin(x^2) \\)``` which gets
@@ -74,12 +74,12 @@ rendered as \\( sin(x^2) \\)
 Here's another example using type ```\mathsf```
 
 {% highlight r %}
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
+$\mathsf{Data = PCs} \times \mathsf{Loadings}$
 {% endhighlight %}
 
 which gets displayed as
 
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
+$\mathsf{Data = PCs} \times \mathsf{Loadings}$
 
 Or even better:
 
@@ -95,7 +95,7 @@ If you want to use subscripts like this \\( \mathbf{X}\_{n,p} \\) you need to sc
 underscores with a backslash like so ``` \mathbf{X}\_{n,p} ```:
 
 {% highlight r %}
-$$ \mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p} $$
+$\mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p}$
 {% endhighlight %}
 
 will be displayed as
