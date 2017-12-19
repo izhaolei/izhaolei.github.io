@@ -4,6 +4,7 @@ title: "MathJax with Jekyll"
 date: 2014-02-16
 categories: opinion
 tags: [resources, jekyll]
+mathjax: true
 image: http://gastonsanchez.com/images/blog/mathjax_logo.png
 ---
 
