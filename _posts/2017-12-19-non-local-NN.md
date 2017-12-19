@@ -1,3 +1,7 @@
+---
+mathjax: true
+---
+
 #### [Non-local Neural Networks](https://arxiv.org/abs/1711.07971)
 
 ##### 概述
