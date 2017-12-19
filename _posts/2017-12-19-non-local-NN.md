@@ -19,8 +19,8 @@ $
 
 作者文中提到的non-local结构如下所示：
 
-​    ![](_post/figure1.PNG)
-<img class="centered" src="_post/figure1.PNG" />
+​    ![](./_post/figure1.PNG)
+<img class="centered" src="figure1.PNG" />
 
 ​    **文章中提出的non-local能够对输入信号的所有位置进行加权，这是non-local区别于传统的CNN、RNN的地方，CNN虽然也能看做是对于输入信号的加权输出，但是CNN只是利用了卷积核所能够到的位置，只是局部的加权，non-local可以看做是一个和输入尺寸一样大的卷积核被作用到了输入信号上，大大增加了网络的感受野。能很好的增强网络对于特征的表征能力，提升整体性能。**
 
