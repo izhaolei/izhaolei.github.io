@@ -2,10 +2,10 @@
 title: Non-local Neural Networks 读书笔记
 mathjax: true
 type: categories
-categories: paper note
+categories: paper-note
 ---
 
-#####论文链接 [Non-local Neural Networks](https://arxiv.org/abs/1711.07971)
+[论文链接：https://arxiv.org/abs/1711.07971](https://arxiv.org/abs/1711.07971)
 
 ##### 概述
 
