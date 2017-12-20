@@ -1,5 +1,5 @@
 ---
-title Non-local Neural Networks 读书笔记
+title: Non-local Neural Networks 读书笔记
 mathjax: true
 type: categories
 categories: paper note
@@ -14,10 +14,9 @@ categories: paper note
 ##### non-local 
 
 ​    non-local可以表述为：在输出中，位置$X_i$ 的特征可以表述为输入所有位置的加权和。根据这个思想作者定义了一个深度学习下广义的non-local操作：
-$
+$$
 y_i=\frac{1}{c(x)}\sum_{\forall j} f(x_i,x_j)g(x_j)
-$
-
+$$
 ​    其中$y$ 与$x$ 分别表示输出与输入信号，其中小标$i$ 表征输出的位置，为待计算量，小标$j$ 表示输入信号中的需要加权的位置，函数$g(\cdot)$ 表示输入信号在某个特定位置的特征表述，$f(\cdot)$ 表述位置间的相对关系，可以理解为加权和的权值计算函数。
 
 作者文中提到的non-local结构如下所示：
