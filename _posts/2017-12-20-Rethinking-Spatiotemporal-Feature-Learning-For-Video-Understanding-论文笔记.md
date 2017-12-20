@@ -47,10 +47,13 @@ categories: paper-note
 最后作者基于对以上问题的探究，提出了gated spatiotemporal-separable 3D卷积 spatiotemporal-separable 3D卷积结构。
 
 对于在空间坐标为$(w,h)$，以及时间帧$t$处的特征向量可以表征为：$X_{twh}\subset R^D$ 作者定义的gated操作为：
+
 $$
 {X^{'}} _{twh}= A \bigotimes X_{twh}
 $$
-其中$\bigotimes$表示为对应相乘，$A\subset R^D$ 是对应的权重(gate)。$A$的聚酸过程如下：
+
+其中$\bigotimes$表示为对应相乘，$A\subset R^D$ 是对应的权重(gate)。$A$的计算过程如下：
+
 $$
 A= \sigma(W \  pool_{st}(X))\ \ \ where\ \  W\subset R^{D\times D}
 $$
