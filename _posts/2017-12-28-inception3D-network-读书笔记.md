@@ -1,5 +1,5 @@
 ---
-title: Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
+title: Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset(I3D) 论文笔记
 mathjax: true
 type: categories
 categories: paper-note
