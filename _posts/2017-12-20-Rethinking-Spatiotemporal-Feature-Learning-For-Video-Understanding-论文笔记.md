@@ -5,7 +5,7 @@ type: categories
 categories: paper-note
 ---
 
-在这篇文章中，作者系统的谈久了3D 卷积网络对于行为识别的作用。从目前的state-of-the-art工作[I3D](https://arxiv.org/abs/1705.07750) 开始，研究了3D卷积在神经网络不同位置所起的作用，同时作者提出了gated spatiotemporal-separable 3D卷积[论文链接](https://arxiv.org/abs/1712.04851)。
+在这篇文章中，作者系统的谈久了3D 卷积网络对于行为识别的作用。从目前的state-of-the-art工作[I3D](https://arxiv.org/abs/1705.07750) 开始，研究了3D卷积在神经网络不同位置所起的作用，同时作者提出了gated spatiotemporal-separable 3D卷积<font color=blue >[论文链接](https://arxiv.org/abs/1712.04851)</font>。
 
 #### 文章主要出发点
 
