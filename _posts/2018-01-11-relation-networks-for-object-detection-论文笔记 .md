@@ -1,0 +1,26 @@
+---
+title: relation networks for object detection 论文笔记
+mathjax: true
+type: categories
+categories: paper-note
+---
+
+​     本文是2017年底微软亚洲研究院的工作，是一个目标检测的框架，号称**真正**做到了目标检测的端到端模型。本文提出的relation networks 借鉴了自然语言处理任务中常用的attention机制。建立了不同目标之间的相关性量化model，极大提高了检测的效率与性能。
+
+#### 基本框架
+
+​     目前主流的检测框架，主要分为两类：以R-CNN为代表的two-stage模型，和以SSD为代表的one-stage模型。即使像SSD这样的single shot的框架也需要NMS后处理步骤，本文提出的relation networks 避免了后处理的问题真正做到了端到端，如下图。
+
+![](https://github.com/lxg2015/notes/raw/c410ec3323e5d99b3d58d4a5efe7bdf48cdd3e20/image/essay/relationmodule.jpg)
+
+​     在目标检测任务中，上下文信息，目标间关系可以改善算法的性能已经成为了一种共识，但是近年来随着深度学习方法的流行，这种共识的应用便很少出现在基于深度学习的检测框架之中，主要原因是目标物体之间的关系很难建模，比如目标位置、大小、类别、数目等。
+
+​     本文主要受到自然语言处理任务中attention机制[[1]](https://arxiv.org/abs/1706.03762)的启发，本文将attention机制加以拓展，使之适用于目标检测中目标物体之间的关系衡量。
+
+
+
+
+
+#### reference
+
+[1] Vaswani A, Shazeer N, Parmar N, et al. Attention Is All You Need[J]. 2017.
