@@ -33,7 +33,7 @@ categories: paper-note
 
 ​     $w_A^{mn}=\frac{dot(W_kf_A^m,W_qf_A^n)}{\sqrt{d_k}}$
 
-​     $w_G^{mn}=max{0,W_G\cdot {\varepsilon}_G(f_G^m,f_G^n)}$
+​     $w_G^{mn}=max({0,W_G\cdot {\varepsilon}_G(f_G^m,f_G^n)})$
 
 ​     最终的relation network结构如下图所示，是一个残差结构：
 
