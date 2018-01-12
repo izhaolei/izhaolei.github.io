@@ -19,21 +19,31 @@ categories: paper-note
 
 ​     在自然语言处理的任务中，attention机制可以表征为：
 
-​     $$V^{out}=softmax(\frac{QK^t}{\sqrt{d_k}})V \ \ \ \ \ \ \ （1）$$
+$$
+V^{out}=softmax(\frac{QK^t}{\sqrt{d_k}})V \ \ \ \ \ \ \ （1）
+$$
 
 ​     文中作者将上式中的attention机制进行拓展，作者认为对于一个待检测的目标物体，包含两组特征：几何特征$f_G$ 、表征特征$f_A$。对于一组包含$N$个输入物体$\{({f_A^n},{f_G^n})\}_{n=1}^N$的relation network，网络输出的第n个relation feature 表征为：
 
-​     $f_R(n)=\sum_m w^{mn} \cdot(W_V\cdot f_A^m)\ \ \ \ \ \ \ （2）$
+$$
+f_R(n)=\sum_m w^{mn} \cdot(W_V\cdot f_A^m)\ \ \ \ \ \ \ （2）
+$$
 
 ​     在传统的attention机制中，式（2）中$(W_V\cdot f_A^m)$代表式（1）中的$V$。这里$w^{mn}$的计算过程便是论文的创新之处。
 
-​     $w^{mn}=\frac{w_G^{mn}\cdot exp(w_A^{mn})}{\sum_k w_G^{kn}\cdot exp(w_A^{kn})}$
+$$
+w^{mn}=\frac{w_G^{mn}\cdot exp(w_A^{mn})}{ \sum_k w_G^{kn}\cdot exp(w_A^{kn})}
+$$
 
 ​     相比于传统attention直接的softmax函数得到加权系数，这里的综合考虑了几何特征与表征特征两方面的影响，得到最终的加权系数$w^{mn}$。$w_G^{mn}$与$w_A^{mn}$的计算过程分别如下：
 
-​     $w_A^{mn}=\frac{dot(W_kf_A^m,W_qf_A^n)}{\sqrt{d_k}}$
+$$
+w_A^{mn}=\frac{dot(W_kf_A^m,W_qf_A^n)}{\sqrt{d_k}}
+$$
 
-​     $w_G^{mn}=max({0,W_G\cdot {\varepsilon}_G(f_G^m,f_G^n)})$
+$$
+w_G^{mn}=max({0,W_G\cdot {\varepsilon}_G(f_G^m,f_G^n)})
+$$
 
 ​     最终的relation network结构如下图所示，是一个残差结构：
 
