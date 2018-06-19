@@ -23,7 +23,7 @@ model.apply(set_bn_fix)
 
 当然固定BatchNorm后应该吧BatchNorm设置为$eval$模式：
 
-```
+```python
 def set_bn_eval(m):
     classname = m.__class__.__name__
     if classname.find('BatchNorm') != -1:
