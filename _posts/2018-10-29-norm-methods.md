@@ -1,3 +1,10 @@
+---
+title: PyTorch 固定层 finetune
+mathjax: true
+type: categories
+categories:  PyTorch4.0
+---
+
 ### norm methods
 在深度学习中常见的norm方法如下： 
 
@@ -5,7 +12,7 @@
 
 目前来讲，上述四种方法均可以用以下数学公式进行概述：
 
-1.$$\quad \hat {x_i}=\frac{x_i-\mu_i}{\sigma} $$
+1.$\quad \hat {x_i}=\frac{x_i-\mu_i}{\sigma} ​$
 
 2.$\quad y_i=\alpha * \hat{x_i} + \beta$
 
